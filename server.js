@@ -45,3 +45,6 @@ app.get('/peoples', function(req, res){
 });   
 
 app.listen(4000);
+
+mongoose.connect(process.env.MONGOLAB_BLACK_URI || 'mongodb://localhost/full-people');
+
